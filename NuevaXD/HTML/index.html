@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formularrio</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+
+<body>
+
+    <section class="contenedor">
+        <h1>Formulario de Registro Estudiantil</h1>
+
+            <form>
+                <fieldset class="marco">
+
+                    <legend>Datos Personales</legend>
+
+                    <div>
+                        <br><label for="nombre">Nombre Completo:</label><br>
+                        <input type="text" id="nombre" placeholder="Ingrese su nombre completo">
+
+                        <br><label for="correo">Correo Electrónico:</label><br>
+                        <input type="email" id="correo" placeholder="ejemplo@correo.com">
+
+                        <br><label for="telefono">Número de Teléfono:</label><br>
+                        <input type="tel" id="telefono" placeholder="0000-0000">
+
+                        <br><label for="fechanac">Fecha de Nacimiento</labe><br>
+                            <input type="date" id="fechanac">
+
+                            <br><label for="edad">Edad:</label><br>
+                            <input type="number" id="edad">
+                    </div>
+
+                </fieldset>
+
+                <fieldset class="marco">
+                    <legend>Información Académica</legend>
+
+                    <label for="opciones">Carrera:</label><br>
+
+                    <select id="opciones">
+                        <option>Selecciona una opción</option>
+                        <option>Informática</option>
+                        <option>Ciencia Jurídica</option>
+                        <option>Psicología</option>
+                    </select>
+
+
+                        <p>Turno de estudio:</p>
+                    <div class="grupo">
+
+                        <input type="radio" name="turno" id="manana"> <label for="manana">Mañana</label>
+
+                        <input type="radio" name="turno" id="tarde"> <label for="tarde">Tarde</label>
+
+                        <input type="radio" name="turno" id="noche"> <label for="noche">Noche</label>
+
+                    </div>
+
+
+                        <p>Áreas de interés:</p>
+                    <div class="grupo">
+
+
+                        <input type="checkbox" id="programacion"> <label for="programacion">Programación</label>
+
+                        <input type="checkbox" id="basededatos"> <label for="basededatos">Base de datos</label>
+
+                        <input type="checkbox" id="redes"> <label for="redes">Redes</label>
+
+                    </div>
+
+                </fieldset>
+
+
+                <fieldset class="marco">
+                    <legend>Otros datos</legend>
+
+                    <div class="otrosdatos">
+                    <label>Color preferido para el carné:</label><br>
+                    <input type="color"><br>
+
+                    <br><label>Seleccione su nivel de conocimiento sobre informática:</label><br>
+                    <input type="range" min="0" max="10" value="5"><br>
+
+                    <br><label>Subir fotografía:</label><br>
+                    <input type="file" id="foto" accept="image/*" placeholder="Sube tu foto">
+                    </div>
+
+                </fieldset>    
+
+                <div class="botones">
+                    <button type="submit">Enviar registro</button>
+                    <button type="reset">Limpiar formulario</button>
+                </div>
+
+            </form>
+    </section>
+    <section class="contenedor">
+
+        <h1>Encuesta de Satisfacción</h1>
+        <form>
+            <fieldset class="marco">
+                <legend>Evaluación del servicio</legend>
+
+                <p>¿Cómo califica la atención recibida?</p>
+                <div class="grupo">
+                    <input type="radio" name="atencion" id="excelente"> <label for="excelente">Excelente</label>
+                    <input type="radio" name="atencion" id="bueno"> <label for="bueno">Bueno</label>
+                    <input type="radio" name="atencion" id="regular"> <label for="regular">Regular</label>
+                </div>
+
+
+                 <p>Servicios utilizados</p>
+                <div class="grupo">
+                   
+                    <input type="checkbox" name="servicio" id="biblioteca"> <label for="biblioteca">Biblioteca</label>
+                    <input type="checkbox" name="servicio" id="laboratorio"> <label for="laboratorio">Laboratorio</label>
+                    <input type="checkbox" name="servicio" id="plataforma"> <label for="plataforma">Plataforma virtual</label>
+                </div>
+
+                
+
+                <br><label>Nivel de satisfacción:</label><br>
+                <br><input type="range" min="0" max="10" value="5"><br>
+
+                <br><label>Comentario adicional:</label><br>
+                <textarea rows="4" cols="80"></textarea>
+
+            </fieldset>
+            <div class="botones">
+                    <button type="submit">Enviar encuesta</button>
+                    <button type="reset">Limpiar</button>
+            </div>
+
+        </form>
+    </section>
+</body>
